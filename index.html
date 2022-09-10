@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="section1">
+        <h1 class="section1__heading">Learn to code by watching others</h1>
+        <p class="section1__para">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+
+      <section class="section2">
+        <button class="section2__btn">
+          <b>Try it free 7 days</b> then $20/mo. thereafter
+        </button>
+        <form class="form" action="#" name="myForm">
+          <p>
+            <input
+              class="form__input"
+              type="text"
+              name="first"
+              placeholder="First Name"
+              id="first"
+            />
+            <span class="form__error" id="fname-error"
+              >First Name cannot be empty</span
+            >
+          </p>
+
+          <p>
+            <input
+              id="last"
+              class="form__input"
+              type="text"
+              name="last"
+              placeholder="Last Name"
+            />
+            <span class="form__error" id="fname-error"
+              >First Name cannot be empty</span
+            >
+          </p>
+
+          <p>
+            <input
+              id="email"
+              class="form__input"
+              type="email"
+              name="Email"
+              placeholder="Email Address"
+            />
+            <span class="form__error" id="fname-error"
+              >First Name cannot be empty</span
+            >
+          </p>
+
+          <p>
+            <input
+              id="pwd"
+              class="form__input"
+              type="password"
+              name="pwd"
+              placeholder="Password"
+            />
+            <span class="form__error" id="fname-error"
+              >First Name cannot be empty</span
+            >
+          </p>
+
+          <input
+            type="submit"
+            id="submit"
+            name="submit"
+            class="form__sub-btn"
+            value="CLAIM YOUR FREE TRAIL"
+          />
+
+          <p class="form__agreement">
+            By clicking the button, you are agreeing to our
+            <span class="form__agreement__red">Terms and Services</span>
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+  <script src="./script.js"></script>
+</html>

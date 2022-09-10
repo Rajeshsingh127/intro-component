@@ -1,0 +1,29 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: url('../images/bg-intro-mobile.png'), var(--Red);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 1.3rem;
+  @media screen and (min-width: 550px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/bg-intro-desktop.png');
+  }
+}
+
+.container {
+  max-width: 75rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  @media screen and (min-width: 550px) {
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+}
